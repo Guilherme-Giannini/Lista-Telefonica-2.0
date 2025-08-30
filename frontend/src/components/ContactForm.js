@@ -7,7 +7,7 @@ const ContactForm = ({ contatoEditando, onSave }) => {
   const [telefone, setTelefone] = useState("");
   const [email, setEmail] = useState("");
   const [dataNascimento, setDataNascimento] = useState("");
-  const [enderecos, setEnderecos] = useState("");
+  const [enderecos, setEnderecos] = useState([""]);
 
   useEffect(() => {
     if (contatoEditando) {
@@ -18,9 +18,27 @@ const ContactForm = ({ contatoEditando, onSave }) => {
         ? contatoEditando.dataNascimento.split("T")[0] 
         : ""
       );
-      setEnderecos(contatoEditando.enderecos ? contatoEditando.enderecos.join(", ") : "");
+      setEnderecos(contatoEditando.enderecos && contatoEditando.enderecos.length > 0 
+        ? contatoEditando.enderecos 
+        : [""]
+      );
     }
   }, [contatoEditando]);
+
+  const handleEnderecoChange = (index, value) => {
+    const novosEnderecos = [...enderecos];
+    novosEnderecos[index] = value;
+    setEnderecos(novosEnderecos);
+  };
+
+  const addEndereco = () => {
+    setEnderecos([...enderecos, ""]);
+  };
+
+  const removeEndereco = (index) => {
+    const novosEnderecos = enderecos.filter((_, i) => i !== index);
+    setEnderecos(novosEnderecos.length > 0 ? novosEnderecos : [""]);
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -30,7 +48,7 @@ const ContactForm = ({ contatoEditando, onSave }) => {
         telefone,
         email,
         dataNascimento: dataNascimento ? new Date(dataNascimento).toISOString() : null,
-        enderecos: enderecos ? enderecos.split(",").map(e => e.trim()) : []
+        enderecos: enderecos.filter(e => e.trim() !== "")
       };
 
       if (contatoEditando) {
@@ -44,7 +62,7 @@ const ContactForm = ({ contatoEditando, onSave }) => {
       setTelefone("");
       setEmail("");
       setDataNascimento("");
-      setEnderecos("");
+      setEnderecos([""]);
     } catch (error) {
       console.error("Erro ao salvar contato:", error);
     }
@@ -82,13 +100,26 @@ const ContactForm = ({ contatoEditando, onSave }) => {
         onChange={e => setDataNascimento(e.target.value)} 
         className={styles.inputField}
       />
-      <input 
-        type="text" 
-        placeholder="Endereços (separar por vírgula)" 
-        value={enderecos} 
-        onChange={e => setEnderecos(e.target.value)} 
-        className={styles.inputField}
-      />
+
+      <label><strong>Endereços:</strong></label>
+      {enderecos.map((endereco, index) => (
+        <div key={index} className={styles.enderecoRow}>
+          <input 
+            type="text" 
+            placeholder={`Endereço ${index + 1}`} 
+            value={endereco} 
+            onChange={e => handleEnderecoChange(index, e.target.value)} 
+            className={styles.inputField}
+          />
+          <button type="button" onClick={() => removeEndereco(index)} className={styles.deleteButton}>
+            Remover
+          </button>
+        </div>
+      ))}
+      <button type="button" onClick={addEndereco} className={styles.addButton}>
+        + Adicionar Endereço
+      </button>
+
       <button type="submit" className={styles.submitButton}>
         {contatoEditando ? "Atualizar" : "Adicionar"}
       </button>

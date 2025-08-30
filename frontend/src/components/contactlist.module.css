@@ -1,32 +1,47 @@
-
 .contactListTitle {
   font-size: 1.8rem;
   color: #ff0000; 
   margin-bottom: 20px;
   text-align: center;
+  font-family: 'Roboto', sans-serif;
 }
 
+.contactList {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 600px;
+  font-family: 'Roboto', sans-serif;
+}
 
 .contactItem {
   background-color: #333; 
   color: #fff; 
   padding: 15px;
   border-radius: 8px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.4);
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  gap: 8px;
 }
 
+.buttonGroup {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
 
 .editButton {
   background-color: #ff7f00; 
   color: #fff;
-  padding: 5px 10px;
+  padding: 6px 12px;
   border-radius: 5px;
   border: none;
   cursor: pointer;
   transition: background-color 0.3s;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
 }
 
 .editButton:hover {
@@ -37,13 +52,27 @@
 .deleteButton {
   background-color: #e91e63; 
   color: #fff;
-  padding: 5px 10px;
+  padding: 6px 12px;
   border-radius: 5px;
   border: none;
   cursor: pointer;
   transition: background-color 0.3s;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
 }
 
 .deleteButton:hover {
   background-color: #c2185b;
+}
+
+/* Lista de endereços */
+.enderecoList {
+  margin: 5px 0 0 15px;
+  padding: 0;
+  list-style-type: disc;
+}
+
+.enderecoItem {
+  font-size: 0.95rem;
+  color: #bbb;
 }

@@ -1,4 +1,3 @@
-
 .formContainer {
   background-color: #333; 
   color: #fff; 
@@ -8,24 +7,26 @@
   flex-direction: column;
   gap: 15px;
   max-width: 400px;
-  margin: 0 auto;
+  margin: 20px auto;
+  font-family: 'Roboto', sans-serif;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
 }
-
 
 .inputField {
   padding: 10px;
   font-size: 1rem;
   border-radius: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid #555;
   background-color: #222;
   color: #fff;
+  font-family: 'Roboto', sans-serif;
 }
 
 .inputField:focus {
   border-color: #ff0000; 
   outline: none;
+  box-shadow: 0 0 4px rgba(255, 0, 0, 0.6);
 }
-
 
 .submitButton {
   background-color: #ff0000;
@@ -35,9 +36,50 @@
   border: none;
   cursor: pointer;
   font-size: 1rem;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
   transition: background-color 0.3s;
 }
 
 .submitButton:hover {
   background-color: #e60000;
+}
+
+
+.addButton {
+  background-color: #e60000;
+  color: #fff;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-family: 'Roboto', sans-serif;
+  transition: background-color 0.3s;
+}
+
+.addButton:hover {
+  background-color: #218838;
+}
+
+.deleteButton {
+  background-color: #dc3545;
+  color: #fff;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-family: 'Roboto', sans-serif;
+  transition: background-color 0.3s;
+}
+
+.deleteButton:hover {
+  background-color: #a71d2a;
+}
+
+.enderecoRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }

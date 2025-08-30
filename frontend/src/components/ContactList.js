@@ -44,10 +44,22 @@ const ContactList = ({ onEdit, reload }) => {
               ? new Date(contato.dataNascimento).toLocaleDateString("pt-BR") 
               : "—"}
             </p>
-            <p><strong>Endereços:</strong> {contato.enderecos && contato.enderecos.length > 0 
-              ? contato.enderecos.join(", ") 
-              : "—"}
-            </p>
+
+            <div>
+              <strong>Endereços:</strong>
+              {contato.enderecos && contato.enderecos.length > 0 ? (
+                <ul className={styles.enderecoList}>
+                  {contato.enderecos.map((endereco, index) => (
+                    <li key={index} className={styles.enderecoItem}>
+                      {endereco}
+                    </li>
+                  ))}
+                </ul>
+              ) : (
+                <p>—</p>
+              )}
+            </div>
+
             <div className={styles.buttonGroup}>
               <button 
                 className={styles.editButton} 

@@ -44,3 +44,4 @@ C:\Users\Dados\projetos\lista-telefonica\ListaTelefonica.Api\obj\Debug\net9.0\re
 C:\Users\Dados\projetos\lista-telefonica\ListaTelefonica.Api\obj\Debug\net9.0\ListaTelefonica.Api.pdb
 C:\Users\Dados\projetos\lista-telefonica\ListaTelefonica.Api\obj\Debug\net9.0\ListaTelefonica.Api.genruntimeconfig.cache
 C:\Users\Dados\projetos\lista-telefonica\ListaTelefonica.Api\obj\Debug\net9.0\ref\ListaTelefonica.Api.dll
+C:\Users\Dados\projetos\lista-telefonica\ListaTelefonica.Api\obj\Debug\net9.0\ListaTelefonica.Api.sourcelink.json
