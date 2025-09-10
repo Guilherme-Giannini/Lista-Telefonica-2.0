@@ -1,6 +1,4 @@
 using MediatR;
-using System.Threading;
-using System.Threading.Tasks;
 using ListaTelefonica.Application.Abstractions.Repositories;
 using ListaTelefonica.Domain.Entities;
 using ListaTelefonica.Api.Application.Queries;

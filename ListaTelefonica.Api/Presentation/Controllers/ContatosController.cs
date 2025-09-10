@@ -40,7 +40,7 @@ namespace ListaTelefonica.Api.Presentation.Controllers
         [HttpPut("{id}")]
 public async Task<IActionResult> Update(string id, [FromBody] UpdateContatoCommand request)
 {
-    request.Id = id; // seta o Id vindo da rota
+    request.Id = id; 
 
     var result = await _mediator.Send(request);
 

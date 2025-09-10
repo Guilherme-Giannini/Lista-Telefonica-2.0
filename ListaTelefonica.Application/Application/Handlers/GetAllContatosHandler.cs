@@ -1,7 +1,7 @@
 using MediatR;
-using ListaTelefonica.Application.Abstractions.Repositories; // IContatoRepository
-using ListaTelefonica.Domain.Entities;                       // Contato
-using ListaTelefonica.Api.Application.Queries;               // GetAllContatosQuery
+using ListaTelefonica.Application.Abstractions.Repositories;
+using ListaTelefonica.Domain.Entities;                      
+using ListaTelefonica.Api.Application.Queries;               
 
 namespace ListaTelefonica.Api.Application.Handlers
 {

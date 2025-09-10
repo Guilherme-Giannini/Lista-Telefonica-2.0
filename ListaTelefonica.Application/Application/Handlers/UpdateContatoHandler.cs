@@ -28,12 +28,12 @@ namespace ListaTelefonica.Application.Handlers
 
             try
             {
-                await _contatoRepository.UpdateAsync(contato); // não retorna nada
-                return true; // se chegou aqui, deu certo
+                await _contatoRepository.UpdateAsync(contato);
+                return true; 
             }
             catch
             {
-                return false; // em caso de erro, retorna false
+                return false; 
             }
         }
     }

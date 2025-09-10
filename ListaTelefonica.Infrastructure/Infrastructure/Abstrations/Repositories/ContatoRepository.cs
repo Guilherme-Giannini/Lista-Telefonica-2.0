@@ -17,7 +17,7 @@ namespace ListaTelefonica.Infrastructure.Repositories
         public async Task<IEnumerable<Contato>> GetAllAsync()
         {
             var contatos = await _context.Contatos.Find(c => true).ToListAsync();
-            return contatos.Select(MapToDomain).ToList(); // Garante List<Contato>
+            return contatos.Select(MapToDomain).ToList();
         }
 
         public async Task<Contato?> GetByIdAsync(string id)
@@ -60,7 +60,7 @@ namespace ListaTelefonica.Infrastructure.Repositories
                 Telefone = mongo.Telefone,
                 Email = mongo.Email,
                 DataNascimento = mongo.DataNascimento,
-                Enderecos = mongo.Enderecos?.ToList() ?? new List<string>() // evita null
+                Enderecos = mongo.Enderecos?.ToList() ?? new List<string>()
             };
 
         private static MongoContato MapToMongo(Contato contato) =>

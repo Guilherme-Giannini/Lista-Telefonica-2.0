@@ -10,14 +10,14 @@ namespace ListaTelefonica.CrossCutting.IoC
     {
         public static IServiceCollection AddInfrastructure(this IServiceCollection services, IConfiguration configuration)
         {
-            // Bind das configurações do Mongo
+          
             services.Configure<MongoDbSettings>(
                 configuration.GetSection("MongoDbSettings"));
 
-            // Registro do contexto
+          
             services.AddSingleton<MongoDbContext>();
 
-            // Registro do repositório
+           
             services.AddScoped<IContatoRepository, ContatoRepository>();
 
             return services;
