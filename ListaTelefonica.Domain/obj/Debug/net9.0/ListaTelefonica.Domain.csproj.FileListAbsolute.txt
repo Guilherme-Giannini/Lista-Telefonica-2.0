@@ -1,0 +1,12 @@
+C:\Users\Dados\projetos\lista-telefonica\ListaTelefonica.Domain\bin\Debug\net9.0\ListaTelefonica.Domain.deps.json
+C:\Users\Dados\projetos\lista-telefonica\ListaTelefonica.Domain\bin\Debug\net9.0\ListaTelefonica.Domain.dll
+C:\Users\Dados\projetos\lista-telefonica\ListaTelefonica.Domain\bin\Debug\net9.0\ListaTelefonica.Domain.pdb
+C:\Users\Dados\projetos\lista-telefonica\ListaTelefonica.Domain\obj\Debug\net9.0\ListaTelefonica.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dados\projetos\lista-telefonica\ListaTelefonica.Domain\obj\Debug\net9.0\ListaTelefonica.Domain.AssemblyInfoInputs.cache
+C:\Users\Dados\projetos\lista-telefonica\ListaTelefonica.Domain\obj\Debug\net9.0\ListaTelefonica.Domain.AssemblyInfo.cs
+C:\Users\Dados\projetos\lista-telefonica\ListaTelefonica.Domain\obj\Debug\net9.0\ListaTelefonica.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Dados\projetos\lista-telefonica\ListaTelefonica.Domain\obj\Debug\net9.0\ListaTelefonica.Domain.sourcelink.json
+C:\Users\Dados\projetos\lista-telefonica\ListaTelefonica.Domain\obj\Debug\net9.0\ListaTelefonica.Domain.dll
+C:\Users\Dados\projetos\lista-telefonica\ListaTelefonica.Domain\obj\Debug\net9.0\refint\ListaTelefonica.Domain.dll
+C:\Users\Dados\projetos\lista-telefonica\ListaTelefonica.Domain\obj\Debug\net9.0\ListaTelefonica.Domain.pdb
+C:\Users\Dados\projetos\lista-telefonica\ListaTelefonica.Domain\obj\Debug\net9.0\ref\ListaTelefonica.Domain.dll

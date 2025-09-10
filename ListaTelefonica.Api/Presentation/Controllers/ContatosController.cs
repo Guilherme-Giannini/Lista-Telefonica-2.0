@@ -1,9 +1,10 @@
 using Microsoft.AspNetCore.Mvc;
 using MediatR;
-using ListaTelefonica.Api.Domain;
+using ListaTelefonica.Domain.Entities;
 using ListaTelefonica.Api.Application.Commands;
 using ListaTelefonica.Api.Application.Queries;
-using System.Threading.Tasks;
+using ListaTelefonica.Application.Application.Commands;
+using ListaTelefonica.Application.Commands;
 
 namespace ListaTelefonica.Api.Presentation.Controllers
 {
@@ -37,12 +38,17 @@ namespace ListaTelefonica.Api.Presentation.Controllers
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> Update(string id, [FromBody] Contato contato)
-        {
-            var updated = await _mediator.Send(new UpdateContatoCommand(id, contato));
-            if (!updated) return NotFound();
-            return NoContent();
-        }
+public async Task<IActionResult> Update(string id, [FromBody] UpdateContatoCommand request)
+{
+    request.Id = id; // seta o Id vindo da rota
+
+    var result = await _mediator.Send(request);
+
+    if (!result)
+        return NotFound();
+
+    return NoContent();
+}
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(string id)

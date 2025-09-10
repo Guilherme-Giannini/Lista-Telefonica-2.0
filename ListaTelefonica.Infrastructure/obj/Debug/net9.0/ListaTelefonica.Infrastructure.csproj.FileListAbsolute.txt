@@ -1,0 +1,16 @@
+C:\Users\Dados\projetos\lista-telefonica\ListaTelefonica.Infrastructure\bin\Debug\net9.0\ListaTelefonica.Infrastructure.deps.json
+C:\Users\Dados\projetos\lista-telefonica\ListaTelefonica.Infrastructure\bin\Debug\net9.0\ListaTelefonica.Infrastructure.dll
+C:\Users\Dados\projetos\lista-telefonica\ListaTelefonica.Infrastructure\bin\Debug\net9.0\ListaTelefonica.Infrastructure.pdb
+C:\Users\Dados\projetos\lista-telefonica\ListaTelefonica.Infrastructure\bin\Debug\net9.0\ListaTelefonica.Domain.dll
+C:\Users\Dados\projetos\lista-telefonica\ListaTelefonica.Infrastructure\bin\Debug\net9.0\ListaTelefonica.Domain.pdb
+C:\Users\Dados\projetos\lista-telefonica\ListaTelefonica.Infrastructure\obj\Debug\net9.0\ListaTelefonica.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Dados\projetos\lista-telefonica\ListaTelefonica.Infrastructure\obj\Debug\net9.0\ListaTelefonica.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dados\projetos\lista-telefonica\ListaTelefonica.Infrastructure\obj\Debug\net9.0\ListaTelefonica.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Dados\projetos\lista-telefonica\ListaTelefonica.Infrastructure\obj\Debug\net9.0\ListaTelefonica.Infrastructure.AssemblyInfo.cs
+C:\Users\Dados\projetos\lista-telefonica\ListaTelefonica.Infrastructure\obj\Debug\net9.0\ListaTelefonica.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Dados\projetos\lista-telefonica\ListaTelefonica.Infrastructure\obj\Debug\net9.0\ListaTelefonica.Infrastructure.sourcelink.json
+C:\Users\Dados\projetos\lista-telefonica\ListaTelefonica.Infrastructure\obj\Debug\net9.0\ListaTel.9C6653FE.Up2Date
+C:\Users\Dados\projetos\lista-telefonica\ListaTelefonica.Infrastructure\obj\Debug\net9.0\ListaTelefonica.Infrastructure.dll
+C:\Users\Dados\projetos\lista-telefonica\ListaTelefonica.Infrastructure\obj\Debug\net9.0\refint\ListaTelefonica.Infrastructure.dll
+C:\Users\Dados\projetos\lista-telefonica\ListaTelefonica.Infrastructure\obj\Debug\net9.0\ListaTelefonica.Infrastructure.pdb
+C:\Users\Dados\projetos\lista-telefonica\ListaTelefonica.Infrastructure\obj\Debug\net9.0\ref\ListaTelefonica.Infrastructure.dll

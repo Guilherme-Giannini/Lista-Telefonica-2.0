@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ListaTelefonica.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4d4648584c05db118e58ba1cbecfd62842db2261")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a7ebf22f3dcfb6213897557affa217dd4bfdeebc")]
 [assembly: System.Reflection.AssemblyProductAttribute("ListaTelefonica.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ListaTelefonica.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
